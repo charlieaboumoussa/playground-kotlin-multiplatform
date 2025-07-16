@@ -62,7 +62,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
         }
         commonMain.dependencies {
-//            implementation(projects.feature.preonboarding)
+            implementation(projects.feature.preonboarding)
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)

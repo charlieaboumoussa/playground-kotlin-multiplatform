@@ -2,11 +2,11 @@ package com.treasure.app
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.treasure.app.preonboarding.PreOnboardingScreen
 
 @Composable
 fun App() {
@@ -18,7 +18,7 @@ fun App() {
                 startDestination = Features.Preonboarding().route
             ) {
                 composable(route = Features.Preonboarding().route) {
-                    Text("This is the Preonboarding screen")
+                    PreOnboardingScreen()
                 }
                 composable(route = Features.Authentication().route) {
 
